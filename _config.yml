@@ -1,0 +1,75 @@
+# Site settings
+# These are used to personalize your site. You access them via {{ site.title }}, 
+# {{ site.email }} and so on. You can create any custom variable you like. They
+# will be accessible in the templates via {{ site.myvariable }}.
+
+title: Kankoda Design System
+description: >-
+  This is the shared design system for the Kankoda company. 
+
+url: https://design.kankoda.com
+email: info@keyboardkit.com
+
+copyright_year: 2025-2026
+copyright_owner: Kankoda Sweden AB
+copyright_url: https://kankoda.com
+
+bluesky_username: keyboardkit.bsky.social
+github_username: KeyboardKit
+mastodon_username: keyboardkit@techhub.social
+twitter_username: keyboardkitsdk
+
+assets: /assets/
+header_image: /assets/icon/header.png
+
+urls:
+  email:  mailto:info@kankoda.com
+  rss:    https://design.kankoda.com/feed.xml
+
+# google-analytics:
+#   measurement-id: G-XJ0HPZDSM3
+
+header:
+  title: Kankoda
+  icon: /assets/icon/header.png
+  pages:
+    - pages/home.md
+
+footer:
+  sitemap:
+    - index.html
+    - pages/blog.md
+
+collections_dir: collections
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:categories/:year/:month/:day/:title
+
+baseurl: ""
+theme: minima
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+include: [".well-known"]
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      type: "pages"
+    values:
+      layout: page
+      image: /assets/headers/kankoda.jpg
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - _docs/

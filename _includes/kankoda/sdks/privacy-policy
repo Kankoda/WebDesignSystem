@@ -1,0 +1,109 @@
+{% assign name = include.name %}
+{% assign url = include.url %}
+{% assign licensor = include.licensor | default: "Kankoda Sweden AB" %}
+
+*Last updated: 2025-06-05*
+
+
+## Privacy Policy 
+
+This is the Privacy Policy for [{{name}}]({{include.url}}) (“the Software") which is owned and licensed by [{{licensor}}]({{site.url}}) (“the Licensor").
+
+We are committed to your privacy and in being transparent regarding our data collection practices. This privacy policy explains how the Software handles data when integrated into other products.
+
+
+## In short
+
+- The Software does not collect any personal data.
+- The Software may collect anonymous usage statistics and crash reports.
+- All collected data is intended to improve Software functionality and reliability.
+
+
+## Definitions
+
+**Personal Data**: Information that can be used to identify you as an individual, either directly (such as your name or email) or indirectly (through combinations of data points).
+
+**Anonymous Data**: Information that can't be used to identify you as an individual and that has been aggregated or anonymized to remove any identifying characteristics.
+
+
+## Data Collection
+
+### What We Don't Collect
+
+The Software does not collect:
+
+- Personal identifiers (names, email addresses, phone numbers)
+- Device identifiers that could be used for tracking
+- Any data that could identify individual users
+- User-generated content
+- Location data
+
+
+### What We May Collect
+
+The Software may collect anonymous data including:
+
+- **Usage Statistics**: How frequently the Software and it's features are used, to understand feature adoption.
+- **Crash Reports**: Technical information about Software failures, including error messages and stack traces.
+- **Performance Metrics**: Performance and resource usage, to understand & improve Software performance.
+
+
+## Data Storage
+
+The Software may store anonymous, aggregated data:
+
+- Within the Software until it's synced to cloud-storage.
+- Securely on servers with industry-standard encryption.
+- Only as long as necessary for the purposes described in this policy.
+
+
+## Data Sharing
+
+The Software may share anonymous, aggregated data with:
+
+- **Our Development Team**: To improve Software functionality and fix issues.
+- **Analytics Services**: Third-party services that help us analyze usage patterns.
+
+{{licensor}} does not:
+
+- Sell data to third parties
+- Share data with advertisers
+- Provide data to any party for marketing purposes
+
+
+## Your Rights
+
+Since the Software does not collect personal data, traditional data protection rights (such as access, deletion, or portability) do not apply. You can contact {{licensor}} with questions about our privacy policy practices.
+
+
+## Developer Responsibilities
+
+Developers using the Software are responsible for:
+
+- Providing appropriate privacy notices to their users
+- Ensuring compliance with applicable privacy laws in their applications
+- Obtaining necessary user consents for their own data collection practices
+
+Developers integrating the Software can contact {{licensor}} with questions about our data practices.
+
+
+## Compliance
+
+This policy is designed to comply with major privacy regulations including GDPR, CCPA, and other applicable data protection laws.
+
+
+## Changes to This Policy
+
+We may update this privacy policy from time to time. Significant changes will be:
+
+- Posted on our website
+- Communicated through Software release notes
+- Effective 30 days after notification to provide adequate notice
+
+
+## Contact Information
+
+If you have questions about this privacy policy or our data practices, please contact {{licensor}} at:
+
+- Email: [{{site.email}}]({{site.urls.email}})
+- Website: [{{site.url}}]({{site.url}})

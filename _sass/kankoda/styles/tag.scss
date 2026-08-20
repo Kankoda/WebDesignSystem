@@ -1,0 +1,81 @@
+// Tags
+
+a.tag,
+button.tag,
+span.tag,
+div.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  width: fit-content;
+  padding: 0.18rem 0.42rem 0.22rem;
+  border: 1px solid var(--tag-border, var(--border-glass));
+  border-radius: 0.38rem;
+  background: var(--tag-bg, rgba(255, 255, 255, 0.55));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-default);
+  color: var(--tag-color, var(--text));
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.35;
+  opacity: 0.72;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.tag {
+  &.rounded {
+    border-radius: var(--radius-tag);
+  }
+
+
+  // Colored Tags
+
+  &.pro {
+    --tag-border: rgba(220, 140, 80, 0.4);
+    --tag-color: rgba(100, 40, 0, 1);
+    background: linear-gradient(135deg, rgba(255, 210, 80, 0.95), rgba(255, 155, 100, 0.95)) !important;
+  }
+}
+
+
+// Button Tags
+
+button.tag {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  font-family: inherit;
+  margin: 0;
+  text-align: center;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    color 0.2s ease,
+    opacity 0.2s ease;
+
+  &:hover,
+  &.active {
+    background: var(--tag-bg, rgba(255, 255, 255, 0.72));
+    border-color: var(--tag-border, rgba(255, 255, 255, 0.72));
+    color: var(--tag-color, var(--text));
+    opacity: 1;
+  }
+
+  &.active {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  }
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 0.2rem;
+    opacity: 1;
+  }
+
+  &.inactive {
+    opacity: 0.42;
+  }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include kankoda/site/head-tag %}
+
+  <body class="{{ page.page-class | default:"glow" }}">
+    <div class="page-shell">
+      <!-- Header -->
+      {% include kankoda/site/header %}
+
+      <!-- Content -->
+      <main aria-label="Content">
+        {% if page.image-show == 1 %}
+        <img src="{{ page.image }}" alt="{{ page.title }}" />
+        {% endif %}
+        {{ content }}
+      </main>
+    </div>
+
+    <!-- Footer -->
+    {% include site/footer %}
+
+    <button class="scroll-to-top" aria-label="Back to top" title="Back to top"></button>
+  </body>
+</html>

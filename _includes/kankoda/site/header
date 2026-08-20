@@ -1,0 +1,26 @@
+<header role="banner">
+  <div class="wrapper wide">
+    {% if site.header.icon %}
+      <a class="brand-icon" href="/"><img src="{{site.header.icon}}" width="25" /></a>
+    {% endif %}
+    
+    <a href="/" class="brand">{{ site.header.title }}</a>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+
+    <nav>
+      {%- for path in site.header.pages -%}
+        {%- assign current-page = site.pages | where: "path", path | first -%}
+        {%- if current-page.title -%}
+          <a href="{{ current-page.url | relative_url }}">{{ current-page.title | escape }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    </nav>
+  </div>
+</header>
