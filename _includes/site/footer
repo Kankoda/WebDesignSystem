@@ -1,0 +1,43 @@
+<footer>
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <div class="wrapper wide">
+    <div class="row">
+      {%- assign pages = site.pages -%}
+      {%- assign paths_site = site.footer_pages_sitemap -%}
+      {%- assign paths_app = site.footer_pages_app -%}
+      
+      <div class="column">
+        <p class="toggle">Column 1</p>
+        <div class="content">
+          <a href="/">Home</a>
+        </div>
+      </div>
+
+      <div class="column">
+        <p class="toggle">Column 2</p>
+        <div class="content">
+          <a href="/">Home</a>
+        </div>
+      </div>
+
+      <div class="column">
+        <p class="toggle">Column 3</p>
+        <div class="content">
+          <a href="/">Home</a>
+        </div>
+      </div>
+
+      <div class="column">
+        <p class="toggle">Column 4</p>
+        <div class="content">
+          <a href="/">Home</a>
+        </div>
+      </div>
+    
+    <div class="copyright">
+      <span>© {{site.copyright_year}}&nbsp;</span>
+      <a href="{{site.copyright_url}}">{{site.copyright_owner}}</a>. 
+      <span>&nbsp;All rights reserved.</span>
+    </div>
+  </div>
+</footer>
