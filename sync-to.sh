@@ -33,6 +33,10 @@ cp -r _sass/kankoda $TARGET/_sass
 
 rm -rf $TARGET/assets/kankoda
 cp -r assets/kankoda $TARGET/assets
+rm -rf $TARGET/assets/js/kankoda
+cp -r assets/js/kankoda $TARGET/js
+rm -rf $TARGET/assets/main.scss
+cp -r assets/main.scss $TARGET/assets
 
 rm -rf $TARGET/js
 cp -r js $TARGET/js
