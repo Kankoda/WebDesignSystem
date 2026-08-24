@@ -9,8 +9,11 @@ TARGET=$1
 
 rm -rf $TARGET/serve
 cp -r serve $TARGET
-rm -rf $TARGET/sync-from
-cp -r sync-from $TARGET
+rm -rf $TARGET/sync-to
+cp -r sync-to $TARGET
+
+rm -rf $TARGET/scripts
+cp -r scripts $TARGET
 
 rm -rf $TARGET/_includes/kankoda
 cp -r _includes/kankoda $TARGET/_includes
