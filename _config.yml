@@ -36,9 +36,23 @@ header:
     - pages/home.md
 
 footer:
-  sitemap:
-    - index.html
-    - pages/blog.md
+  # Sections with links defined as "Title | url" strings.
+  sections:
+    - title: Site
+      links:
+        - Home | /
+    - title: SDK
+      links:
+        - Home | /
+    - title: News & Press
+      links:
+        - Home | /
+    - title: Code
+      links:
+        - Home | /
+    - title: Contact
+      links:
+        - Home | /
 
 collections_dir: collections
 
