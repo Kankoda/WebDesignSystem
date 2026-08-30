@@ -3,6 +3,14 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  background:
+    linear-gradient(var(--bg-texture-overlay), var(--bg-texture-overlay)),
+    var(--bg-texture);
+  background-size: var(--bg-texture-size);
+}
+
 body {
   background-color: var(--bg);
   color: var(--text);
