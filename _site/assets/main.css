@@ -699,8 +699,11 @@ table td {
   --shadow-color: rgba(0, 0, 0, 0.12);
   --shadow-default: 0 4px 24px rgba(0,0,0,0.12);
   --text: var(--text-light);
-  --text-dark: #FFFFFFDD;
-  --text-light: #000000DD;
+  --text-secondary: var(--text-light-secondary);
+  --text-dark: #FFFD;
+  --text-dark-secondary: #FFFFFFAA;
+  --text-light: #000D;
+  --text-light-secondary: #000A;
   --wrapper-width: 900px;
   --wrapper-width-wide: 1250px;
   --wrapper-width-narrow: 650px;
@@ -871,7 +874,7 @@ p {
   flex-wrap: nowrap;
   gap: 0.75rem;
   margin-bottom: 1.25rem;
-  color: rgba(0, 0, 0, var(--opacity-secondary));
+  color: var(--text-secondary);
 }
 .blog-post-date, .blog-post-read-time {
   white-space: nowrap;

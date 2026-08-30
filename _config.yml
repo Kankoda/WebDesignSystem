@@ -82,6 +82,17 @@ defaults:
     values:
       layout: page
       image: /assets/headers/kankoda.jpg
+  -
+    scope:
+      path: "pages/blog.md"
+    values:
+      image: /assets/headers/blog.jpg
+  -
+    scope:
+      type: "posts"
+    values:
+      author: "danielsaidi"
+      layout: "post"
 
 exclude:
   - Gemfile
