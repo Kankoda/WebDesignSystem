@@ -16,10 +16,17 @@ description: The Kankoda Web Design System is used by the company website and it
 <a name="download"></a>
 <section class="showcase blue">
   <article class="wrapper wide slide-in">
-    <h2>App Store Button</h2>
+    <h2>Buttons</h2>
+    <h3>App Store</h3>
     <div>
       {% include kankoda/buttons/appstore %}
       {% include kankoda/buttons/appstore color="black" %}
+    </div>
+    <h3>Social</h3>
+    <div class="icon-group">
+      {% include kankoda/buttons/social url=site.urls.bluesky type="bluesky" %}
+      {% include kankoda/buttons/social url=site.urls.instagram type="instagram" %}
+      {% include kankoda/buttons/social url=site.urls.mastodon type="mastodon" %}
     </div>
   </article>
 </section>

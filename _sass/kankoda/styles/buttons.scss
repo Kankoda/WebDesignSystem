@@ -1,3 +1,11 @@
+a.appstore {
+  display: inline-block;
+
+  img {
+    width: 175px;
+  }
+}
+
 a.cta {
   display: inline-flex;
   align-items: center;
@@ -69,6 +77,7 @@ a.cta {
   }
 }
 
+
 @media (prefers-reduced-motion: reduce) {
   a.cta {
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
@@ -76,13 +85,5 @@ a.cta {
     &:hover {
       transform: none;
     }
-  }
-}
-
-a.appstore {
-  display: inline-block;
-
-  img {
-    width: 175px;
   }
 }

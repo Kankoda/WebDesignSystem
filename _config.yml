@@ -26,6 +26,16 @@ urls:
   email:  mailto:info@kankoda.com
   rss:    https://design.kankoda.com/feed.xml
 
+  blog:   /blog
+
+  appstore:   https://apps.apple.com/us/developer/kankoda-sweden-ab/id516398918
+  bluesky:    https://bsky.app/profile/kankoda.bsky.social
+  github:     https://github.com/kankoda
+  gumroad:    https://kankoda.gumroad.com
+  mastodon:   https://mastodon.social/@kankoda
+  newsletter: https://kankoda.gumroad.com/subscribe
+  twitter:    https://twitter.com/kankodahq
+
 # google-analytics:
 #   measurement-id: G-XJ0HPZDSM3
 
