@@ -20,7 +20,6 @@ mastodon_username: keyboardkit@techhub.social
 twitter_username: keyboardkitsdk
 
 assets: /assets/
-header_image: /assets/icon/header.png
 
 urls:
   email:  mailto:info@kankoda.com
@@ -40,8 +39,7 @@ urls:
 #   measurement-id: G-XJ0HPZDSM3
 
 header:
-  title: Kankoda
-  icon: /assets/icon/header.png
+  logo: /assets/logo/header.png
   pages:
     - pages/home.md
 
