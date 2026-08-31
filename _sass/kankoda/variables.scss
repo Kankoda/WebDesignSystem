@@ -6,7 +6,7 @@
 
   --bg-texture: none;
   --bg-texture-size: 550px;
-  --bg-texture-overlay: #0005;
+  --bg-texture-overlay: #fff0;
 
   --bg-blue: rgba(231, 239, 252, 0.7);
   --bg-green: rgba(229, 250, 229, 0.7);
@@ -68,12 +68,8 @@
   --shadow-default: 0 4px 24px rgba(0,0,0,0.12);
 
   --text: var(--text-light);
-  --text-secondary: var(--text-light-secondary);
-
-  --text-dark: #FFFD;
-  --text-dark-secondary: #FFFFFFAA;
-  --text-light: #000D;
-  --text-light-secondary: #000A;
+  --text-dark: #FFFFFFDD;
+  --text-light: #000000DD;
 
   --wrapper-width: 900px;
   --wrapper-width-wide: 1250px;
