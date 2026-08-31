@@ -1,6 +1,6 @@
 ---
 title: Kankoda Design System
-date:  2026-08-30 07:00:00 +0100
+date:  2026-08-31 07:00:00 +0100
 tags:  general
 
 assets: /assets/blog/26/0830/

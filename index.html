@@ -13,7 +13,7 @@ description: The Kankoda Web Design System is used by the company website and it
   <p>This website will be updated with all the available components, to ensure that they all render correcntly through updates.</p>
 </div>
 
-<a name="download"></a>
+<a name="buttons"></a>
 <section class="showcase blue">
   <article class="wrapper wide slide-in">
     <h2>Buttons</h2>
@@ -22,6 +22,7 @@ description: The Kankoda Web Design System is used by the company website and it
       {% include kankoda/buttons/appstore %}
       {% include kankoda/buttons/appstore color="black" %}
     </div>
+
     <h3>Social</h3>
     <div class="icon-group">
       {% include kankoda/buttons/social url=site.urls.bluesky type="bluesky" %}
@@ -29,4 +30,9 @@ description: The Kankoda Web Design System is used by the company website and it
       {% include kankoda/buttons/social url=site.urls.mastodon type="mastodon" %}
     </div>
   </article>
+</section>
+
+<a name="news"></a>
+<section class="showcase">
+  {% include kankoda/sections/latest-news %}
 </section>

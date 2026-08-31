@@ -1,8 +1,7 @@
 ---
-permalink: /blog
-layout: blog
-
 title: Blog
+layout: blog
+permalink: /blog
 
 sidebar-menu:
   title: Tags
