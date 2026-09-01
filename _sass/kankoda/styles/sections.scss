@@ -30,9 +30,6 @@ section {
     isolation: isolate;
   }
 
-  // Opts out of any background, including the default `.showcase` one.
-  &.clear { background: transparent; }
-
   &.blue { background: var(--bg-blue); }
   &.green { background: var(--bg-green); }
   &.purple { background: var(--bg-purple); }
@@ -78,7 +75,7 @@ section.showcase {
   // The default showcase background. A color class above overrides it, since
   // those rules are equally specific and come earlier in the cascade... so this
   // one is scoped to "no color class set".
-  &:not(.blue):not(.green):not(.purple):not(.red):not(.orange):not(.gold):not(.silver):not(.dark):not(.clear) {
+  &:not(.blue):not(.green):not(.purple):not(.red):not(.orange):not(.gold):not(.silver):not(.dark) {
     background: var(--bg-blue-subtle);
   }
 
