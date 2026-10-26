@@ -10,7 +10,7 @@
   <img src="{{ include.item.split-image | default: include.item.image }}" />
   <div class="split-actions">
     {% if include.item.url %}
-    <a class="cta glass" href="{{include.item.url}}">Read More</a>
+    <a class="cta glass" href="{{include.item.url}}">{{ include.button-text | default: "Read More" }}</a>
     {% endif %}
     {% if include.item.url_appstore %}
     <a class="cta" href="{{include.item.url_appstore}}">Download</a>
