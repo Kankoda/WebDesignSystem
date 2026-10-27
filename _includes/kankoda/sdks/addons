@@ -2,22 +2,26 @@
 
 {{ sdk.name }} offers various license add-ons. See the pricing table for tier eligibility.
 
-## Additional Apps & Products
+## Additional Products
 
-Business license customers can include additional apps & products in a single license, at a significant discount.
+Business licenses can include additional apps & products in a single license, at a significant discount.
 
 ## Custom Billing
 
-Business license customers can select custom billing and invoicing methods, customize the billing cadence, etc.
+Business licenses can customize the billing and invoicing methods, the billing cadence, etc.
 
 ## Custom Terms & SLA
 
-Business license customers can customize the license terms and SLA to fit their organization’s specific needs.
+Business licenses can customize the license terms and SLA to fit your organization’s specific needs.
 
 ## Expiration Grace Period
 
-Business license customers can customize the license expiration to provide flexibility when it’s time to renew.
+Business licenses can customize the license expiration to provide flexibility when it’s time to renew.
+
+## License File
+
+Business licenses include a license file that is validated on-device, without the need for network requests.
 
 ## Software Escrow
 
-Business license customers can include software escrow, which lets you access the SDK source code in case anything happens to the SDK or Kankoda.
+Business+ licenses include software escrow, which lets you access the SDK source code in case anything happens to the SDK or Kankoda.

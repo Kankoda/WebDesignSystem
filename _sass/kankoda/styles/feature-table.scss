@@ -22,10 +22,9 @@
   }
 
   .grid {
-    box-sizing: border-box;
     padding: 5px;
     grid-column-gap: 5px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr repeat(var(--tier-count, 4), 1fr);
 
     > div {
       padding: 10px 0;
@@ -63,7 +62,7 @@
 
   @container feature-table (max-width: 56rem) {
     .grid {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(var(--tier-count, 4), 1fr);
 
       .feature {
         display: none;

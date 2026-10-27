@@ -12,6 +12,10 @@ img.medium {
   border-radius: 10px !important;
 }
 
+.grid.images img {
+  border-radius: var(--radius-glass-panel);
+}
+
 .page-content {
   img {
     border-radius: var(--radius-glass-panel);

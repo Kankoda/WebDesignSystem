@@ -1,11 +1,17 @@
 // Elements
 
+a.scale:has(div.glass) {
+  border-radius: var(--radius-glass-panel);
+  text-decoration: none;
+}
+
 div.glass {
   background: rgba(255,255,255,0.15);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-glass);
   box-shadow: var(--shadow-default);
   -webkit-backdrop-filter: blur(8px); // For Safari support
+  transition: box-shadow var(--duration-link) ease;
 }
 
 img.glass {

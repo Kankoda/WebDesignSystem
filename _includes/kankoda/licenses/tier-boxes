@@ -1,4 +1,5 @@
-<div class="grid col4 tiers">
+{% assign tier-count = include.tiers | size %}
+<div class="grid col{{ tier-count | at_most: 4 }} tiers">
   {% for tier in include.tiers %}
     {% include kankoda/licenses/tier-box tier=tier %}
   {% endfor %}
