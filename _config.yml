@@ -92,15 +92,14 @@ plugins:
 defaults:
   -
     scope:
+      path: ""
+    values:
+      image: /assets/header.jpg
+  -
+    scope:
       type: "pages"
     values:
       layout: page
-      image: /assets/headers/kankoda.jpg
-  -
-    scope:
-      path: "pages/blog.md"
-    values:
-      image: /assets/headers/blog.jpg
   -
     scope:
       type: "posts"

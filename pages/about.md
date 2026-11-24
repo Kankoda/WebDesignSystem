@@ -7,8 +7,6 @@ eyebrow: Kankoda
 subtitle: The design foundation behind all Kankoda sites.
 title-color: blue
 
-image: /assets/headers/kankoda.jpg
-
 description: The Kankoda Design System is the shared foundation for all Kankoda sites.
 
 sidebar-menu:
