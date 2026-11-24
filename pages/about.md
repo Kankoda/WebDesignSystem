@@ -3,9 +3,8 @@ title: About
 layout: page-sidebar
 permalink: /about
 
-eyebrow: Kankoda
 subtitle: The design foundation behind all Kankoda sites.
-title-color: blue
+title-color: solid blue
 
 description: The Kankoda Design System is the shared foundation for all Kankoda sites.
 

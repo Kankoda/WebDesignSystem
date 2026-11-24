@@ -40,6 +40,18 @@ h1, h2, span {
     &.orange { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-orange-text) 60%, white), var(--glass-orange-text)); }
     &.red { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-red-text) 60%, white), var(--glass-red-text)); }
     &.purple { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-purple-text) 60%, white), var(--glass-purple-text)); }
+
+    // Add `.solid` to a color to use its darker color, without a gradient.
+    &.solid {
+      background-image: none;
+
+      &.blue { color: var(--glass-blue-text) !important; }
+      &.green { color: var(--glass-green-text) !important; }
+      &.yellow { color: var(--glass-yellow-text) !important; }
+      &.orange { color: var(--glass-orange-text) !important; }
+      &.red { color: var(--glass-red-text) !important; }
+      &.purple { color: var(--glass-purple-text) !important; }
+    }
   }
 }
 
