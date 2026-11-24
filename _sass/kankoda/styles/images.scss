@@ -12,15 +12,6 @@ img.medium {
   border-radius: 10px !important;
 }
 
-.grid.images img {
-  border-radius: var(--radius-glass-panel);
-}
-
-img.image {
-  border-radius: var(--radius-glass-panel);
-  box-shadow: var(--shadow-default);
-}
-
 .page-content {
   img {
     border-radius: var(--radius-glass-panel);
