@@ -1,0 +1,16 @@
+<article class="wrapper wide slide-in">
+  <h2>Image Cards</h2>
+  <div class="grid col3 carousel mobile">
+    {% for item in site.data.cards limit: 3 %}
+    {% include kankoda/components/image-card item=item %}
+    {% endfor %}
+  </div>
+
+  <h3>Carousel</h3>
+  <p>Add <code>carousel</code> to a grid to make it scroll.</p>
+  <div class="grid carousel">
+    {% for item in site.data.cards %}
+    {% include kankoda/components/image-card item=item show-tags=0 %}
+    {% endfor %}
+  </div>
+</article>

@@ -1,0 +1,9 @@
+<div class="hero glow">
+  <h1>Kankoda Design System</h1>
+  <h2>All the shared base components, on a single page.</h2>
+  <p>This site renders every component with placeholder data, to make it easy to see that they all render correctly through updates.</p>
+  <div>
+    <a class="cta" href="#buttons">Components</a>
+    <a class="cta glass" href="/blog">Blog</a>
+  </div>
+</div>

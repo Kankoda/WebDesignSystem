@@ -1,0 +1,31 @@
+- name: Yearly
+  subtitle: A fixed price per unit
+  price: $90
+  price_unit: year
+  cta: Buy Now
+  url: "#pricing"
+  features:
+    - Uses a fixed price and unit
+    - Not affected by the toggle
+
+- name: Lifetime
+  box-class: glass tier business
+  badge: New
+  subtitle: A custom box class
+  price: $250
+  price_unit: license
+  cta: Buy Now
+  url: "#pricing"
+  features:
+    - Uses a custom box class
+    - Elevated by its badge
+
+- name: Team
+  subtitle: Another fixed price
+  price: $900
+  price_unit: year
+  cta: Buy Now
+  url: "#pricing"
+  features:
+    - One of three columns
+    - Like the first one

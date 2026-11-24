@@ -22,6 +22,7 @@
   }
 
   .grid {
+    box-sizing: border-box;
     padding: 5px;
     grid-column-gap: 5px;
     grid-template-columns: 1fr repeat(var(--tier-count, 4), 1fr);

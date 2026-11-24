@@ -1,0 +1,20 @@
+{% assign colors = "blue,green,purple,red,orange,gold,silver,dark" | split: "," %}
+{% for color in colors %}
+<section class="showcase {{ color }}">
+  <article class="wrapper wide slide-in">
+    <h2>{{ color | capitalize }}</h2>
+    <p>A showcase section with a {{ color }} background.</p>
+    <div><a class="cta glass" href="#sections">Glass Button</a></div>
+  </article>
+</section>
+{% endfor %}
+
+{% assign glows = "default,blue,green,purple,red,gold,silver" | split: "," %}
+{% for color in glows %}
+<section class="showcase glow {% unless color == "default" %}{{ color }}{% endunless %}">
+  <article class="wrapper wide slide-in">
+    <h2>{{ color | capitalize }} Glow</h2>
+    <p>A showcase section with a {% unless color == "default" %}{{ color }} {% endunless %}glow background.</p>
+  </article>
+</section>
+{% endfor %}

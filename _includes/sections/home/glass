@@ -1,0 +1,21 @@
+<article class="wrapper wide slide-in">
+  <h2>Glass</h2>
+  <p>Glass panels can be used in a <code>grid</code>, with any number of columns.</p>
+  <div class="grid col4 carousel mobile">
+    {% for usp in site.data.usps %}
+    <div class="glass scale">
+      {% include kankoda/components/icon-badge name=usp.icon %}
+      <h4>{{ usp.title }}</h4>
+      <p>{{ usp.text }}</p>
+    </div>
+    {% endfor %}
+  </div>
+
+  <h3>Glow</h3>
+  <div class="grid col4">
+    <div class="glass glow"><h4>Default</h4></div>
+    <div class="glass glow blue"><h4>Blue</h4></div>
+    <div class="glass glow gold"><h4>Gold</h4></div>
+    <div class="glass glow silver"><h4>Silver</h4></div>
+  </div>
+</article>

@@ -1,0 +1,15 @@
+<article class="wrapper wide slide-in">
+  <h2>Metrics</h2>
+  <div class="metric-item-container">
+    {% for item in site.data.metrics %}
+    {% include kankoda/components/metric-item value=item.value label=item.label %}
+    {% endfor %}
+  </div>
+
+  <h2>Testimonials</h2>
+  <div class="grid col2">
+    {% for item in site.data.testimonials %}
+    {% include kankoda/components/testimonial quote=item.quote name=item.name %}
+    {% endfor %}
+  </div>
+</article>

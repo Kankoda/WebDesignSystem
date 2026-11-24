@@ -8,7 +8,7 @@
 
     const pagination = window.Pagination({
       items: posts,
-      perPage: 20,
+      perPage: (paginationEl && Number(paginationEl.dataset.perPage)) || 20,
       paginationEl: paginationEl,
       containerEl: document.querySelector(".blog-header"),
       onPageChange: applyFilters

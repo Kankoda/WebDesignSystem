@@ -1,0 +1,19 @@
+<article class="wrapper wide slide-in">
+  <h2>Images</h2>
+
+  <h3>App Icon & Glass</h3>
+  <div>
+    <img class="app-icon" src="/assets/icon/test.png" alt="App icon" width="120" />
+    <img class="glass" src="/assets/icon/test.png" alt="Glass image" width="120" />
+  </div>
+
+  <h3>Device</h3>
+  <img class="device" src="/assets/showcase/device.svg" alt="Device" style="max-width: 220px" />
+
+  <h3>Image Link</h3>
+  <div class="grid col2">
+    {% for post in site.posts limit: 2 %}
+    {% include kankoda/components/image-link item=post %}
+    {% endfor %}
+  </div>
+</article>

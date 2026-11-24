@@ -58,7 +58,7 @@ layout: plain
             {% endfor %}
           </section>
 
-          <div class="pagination"></div>
+          <div class="pagination"{% if page.per-page %} data-per-page="{{ page.per-page }}"{% endif %}></div>
 
         </article>
       </div>

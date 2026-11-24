@@ -1,0 +1,11 @@
+<article class="wrapper wide slide-in">
+  {% include kankoda/licenses/pricing-title name="The design system" %}
+
+  <h3>Tier Boxes</h3>
+  {% include kankoda/licenses/tier-price-toggle yearly-saving=17 %}
+  {% include kankoda/licenses/tier-boxes tiers=site.data.tiers %}
+  {% include kankoda/licenses/business-disclaimer %}
+
+  <h3>Fixed Prices</h3>
+  {% include kankoda/licenses/tier-boxes tiers=site.data.plans %}
+</article>

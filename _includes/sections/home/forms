@@ -1,0 +1,32 @@
+<article class="wrapper wide slide-in">
+  <h2>Forms</h2>
+
+  <h3>Search Box</h3>
+  <input class="search-box" type="search" placeholder="Search…" aria-label="Search" />
+
+  <h3>Newsletter</h3>
+  {% include kankoda/gumroad/newsletter %}
+
+  <h3>Pagination</h3>
+  <p>Pagination is added to the <a href="/blog">blog</a> by default, but can be added to any list.</p>
+  <div id="pagination-demo">
+    {% for i in (1..8) %}
+    <span class="tag rounded">Item {{ i }}</span>
+    {% endfor %}
+    <div class="pagination"></div>
+  </div>
+</article>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const demo = document.getElementById("pagination-demo");
+    const items = Array.from(demo.querySelectorAll(".tag"));
+    const pagination = window.Pagination({
+      items: items,
+      perPage: 2,
+      paginationEl: demo.querySelector(".pagination"),
+      onPageChange: function () { pagination.render(items); }
+    });
+    pagination.render(items);
+  });
+</script>

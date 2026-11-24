@@ -1,0 +1,7 @@
+<article class="wrapper wide split-list">
+  <h2>Split Items</h2>
+  <p>Split items show content beside an image. A <code>split-list</code> alternates the image side.</p>
+  {% for item in site.data.split-items %}
+  {% include kankoda/split/split-item item=item %}
+  {% endfor %}
+</article>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eefbe8"/><stop offset=".55" stop-color="#e0f6ee"/><stop offset="1" stop-color="#dcecff"/></linearGradient></defs>
+  <rect width="1280" height="640" fill="url(#g)"/>
+  <g font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" fill="#333">
+    <text x="78" y="108" font-size="40">Design</text>
+    <text x="78" y="190" font-size="64" font-weight="600">Writing with the post layout</text>
+    <text x="78" y="560" font-size="40" font-weight="600">Sample</text>
+  </g>
+</svg>

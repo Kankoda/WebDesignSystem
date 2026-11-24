@@ -7,37 +7,83 @@ image:  /assets/headers/kankoda.jpg
 description: The Kankoda Web Design System is used by the company website and its various product sites.
 ---
 
-<div class="hero glow">
-  <h1>Kankoda Design System</h1>
-  <h2>Showcase</h2>
-  <p>This website will be updated with all the available components, to ensure that they all render correcntly through updates.</p>
-</div>
+{% include sections/home/hero %}
+
+<a name="text"></a>
+<section class="showcase">
+  {% include sections/home/text %}
+</section>
 
 <a name="buttons"></a>
 <section class="showcase blue">
-  <article class="wrapper wide slide-in">
-    <h2>Buttons</h2>
-    <h3>App Store</h3>
-    <div>
-      {% include kankoda/buttons/appstore %}
-      {% include kankoda/buttons/appstore color="black" %}
-    </div>
+  {% include sections/home/buttons %}
+</section>
 
-    <h3>Social</h3>
-    <div class="icon-group">
-      {% include kankoda/buttons/social url=site.urls.bluesky type="bluesky" %}
-      {% include kankoda/buttons/social url=site.urls.instagram type="instagram" %}
-      {% include kankoda/buttons/social url=site.urls.mastodon type="mastodon" %}
-    </div>
-  </article>
+<a name="icons"></a>
+<section class="showcase">
+  {% include sections/home/icons-tags %}
+</section>
+
+<a name="glass"></a>
+<section class="showcase purple glow">
+  {% include sections/home/glass %}
+</section>
+
+<a name="images"></a>
+<section class="showcase">
+  {% include sections/home/images %}
+</section>
+
+<a name="cards"></a>
+<section class="showcase green">
+  {% include sections/home/cards %}
+</section>
+
+<a name="social-proof"></a>
+<section class="showcase">
+  {% include sections/home/social-proof %}
+</section>
+
+<a name="split"></a>
+<section class="showcase blue">
+  {% include sections/home/split %}
+</section>
+
+<a name="pricing"></a>
+<section class="showcase gold">
+  {% include sections/home/pricing %}
+</section>
+
+<a name="feature-table"></a>
+<section class="showcase">
+  {% include sections/home/feature-table %}
+</section>
+
+<a name="faq"></a>
+<section class="showcase purple">
+  {% include sections/home/faq %}
+</section>
+
+<a name="code"></a>
+<section class="showcase">
+  {% include sections/home/code %}
+</section>
+
+<a name="forms"></a>
+<section class="showcase blue">
+  {% include sections/home/forms %}
 </section>
 
 <a name="news"></a>
 <section class="showcase">
   {% include kankoda/sections/latest-news %}
+  {% include kankoda/sections/latest-news count=3 %}
 </section>
 
-<a name="news"></a>
-<section class="showcase glow">
-  {% include kankoda/sections/latest-news %}
+<a name="legal"></a>
+<section class="showcase orange">
+  {% include sections/home/legal %}
 </section>
+
+<a name="sections"></a>
+{% include sections/home/sections %}

@@ -42,6 +42,12 @@ header:
   logo: /assets/logo/header.png
   pages:
     - pages/home.md
+    - pages/blog.md
+    - pages/about.md
+  menu-pages:
+    - pages/support.md
+    - pages/terms.md
+    - pages/privacy.md
 
 footer:
   # Sections with links defined as "Title | url" strings.

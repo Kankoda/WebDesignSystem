@@ -1,0 +1,43 @@
+- name: Basic
+  subtitle: For side projects
+  price_month: $10
+  price_year: $100
+  cta: Start Free Trial
+  url: "#pricing"
+  features:
+    - <b>1 Project</b>
+    - Core Components
+    - Community Support
+
+- name: Silver
+  subtitle: For small teams
+  price_month: $25
+  price_year: $250
+  cta: Start Free Trial
+  url: "#pricing"
+  features:
+    - Everything in Basic
+    - <b>5 Projects</b>
+    - Email Support
+
+- name: Gold
+  badge: Popular
+  subtitle: All features
+  price_month: $50
+  price_year: $500
+  cta: Start Free Trial
+  url: "#pricing"
+  features:
+    - Everything in Silver
+    - <b>Unlimited Projects</b>
+    - Priority Support
+
+- name: Business
+  subtitle: For organizations
+  price_month: Custom
+  cta: Contact Us
+  url: "#pricing"
+  features:
+    - Everything in Gold
+    - Custom Terms
+    - Dedicated Support

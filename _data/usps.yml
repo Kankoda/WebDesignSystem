@@ -1,0 +1,15 @@
+- icon: lucide:zap
+  title: Fast
+  text: A short text about speed.
+
+- icon: lucide:shield
+  title: Secure
+  text: A short text about security.
+
+- icon: lucide:globe
+  title: Global
+  text: A short text about reach.
+
+- icon: lucide:heart
+  title: Friendly
+  text: A short text about care.

@@ -1,0 +1,28 @@
+<article class="wrapper wide slide-in">
+  <h2>Buttons</h2>
+
+  <h3>Call to Action</h3>
+  <div>
+    <a class="cta" href="#buttons">Default</a>
+    <a class="cta secondary" href="#buttons">Secondary</a>
+    <a class="cta glass" href="#buttons">Glass</a>
+    <a class="cta glass secondary" href="#buttons">Glass Secondary</a>
+  </div>
+  <div>
+    <a class="cta large" href="#buttons">Large</a>
+    <a class="cta large glass" href="#buttons">Large Glass</a>
+  </div>
+
+  <h3>App Store</h3>
+  <div>
+    {% include kankoda/buttons/appstore %}
+    {% include kankoda/buttons/appstore color="black" %}
+  </div>
+
+  <h3>Social</h3>
+  <div class="icon-group">
+    {% include kankoda/buttons/social url=site.urls.bluesky type="bluesky" %}
+    {% include kankoda/buttons/social url=site.urls.mastodon type="mastodon" %}
+    {% include kankoda/buttons/social url=site.urls.github type="github" %}
+  </div>
+</article>

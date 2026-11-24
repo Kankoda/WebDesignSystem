@@ -1,0 +1,28 @@
+<article class="wrapper wide slide-in">
+  <h2>Icons & Tags</h2>
+
+  <h3>Icon</h3>
+  <div class="icon-group">
+    {% for usp in site.data.usps %}
+    {% include kankoda/components/icon name=usp.icon label=usp.title %}
+    {% endfor %}
+  </div>
+
+  <h3>Icon Badge</h3>
+  <div class="grid col4">
+    {% for usp in site.data.usps %}
+    {% include kankoda/components/icon-badge name=usp.icon label=usp.title %}
+    {% endfor %}
+  </div>
+
+  <h3>Tag</h3>
+  <div>
+    <span class="tag">Default</span>
+    <span class="tag rounded">Rounded</span>
+    <span class="tag pro">Pro</span>
+    <span class="tag pro rounded">Pro Rounded</span>
+    <button class="tag" type="button">Button</button>
+    <button class="tag active" type="button">Active</button>
+    <button class="tag inactive" type="button">Inactive</button>
+  </div>
+</article>

@@ -1,0 +1,8 @@
+- title: What is this?
+  text: A list of **expandable questions**, which are rendered as markdown.
+
+- title: Can answers contain links?
+  text: Yes, like this link to the [blog](/blog).
+
+- title: Can many questions be open at once?
+  text: Yes, each question expands and collapses on its own.

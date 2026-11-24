@@ -1,0 +1,17 @@
+<article class="wrapper wide slide-in">
+  <h2>Feature Table</h2>
+  <section class="feature-table">
+    <div class="sections">
+      {% include kankoda/licenses/feature-table-tiers tiers=site.data.tiers %}
+      <div class="glass">
+        {% include kankoda/licenses/feature-table-row title="Projects" columns="1,5,Unlimited,Unlimited" tooltip="The number of projects." %}
+        {% include kankoda/licenses/feature-table-row title="Components" columns="✔,✔,✔,✔" url="#cards" tooltip="A row with a link." %}
+        {% include kankoda/licenses/feature-table-row title="Themes" columns="-,✔,✔,✔" tooltip="A row with checkmarks." %}
+      </div>
+      <div class="glass">
+        {% include kankoda/licenses/feature-table-row title="Custom Terms" columns="-,-,-,✔" tooltip="A row in another group." %}
+        {% include kankoda/licenses/feature-table-row title="Support" columns="Community,Email,Priority,Dedicated" tooltip="A row with text." %}
+      </div>
+    </div>
+  </section>
+</article>

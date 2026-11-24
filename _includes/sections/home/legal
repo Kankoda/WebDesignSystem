@@ -1,0 +1,33 @@
+{% capture app_privacy %}{% include kankoda/apps/privacy name="Sample App" url="/" %}{% endcapture %}
+{% capture sdk_addons %}{% include kankoda/sdks/addons sdk=site.data.sdk %}{% endcapture %}
+{% capture sdk_privacy %}{% include kankoda/sdks/privacy name="Sample SDK" url="/" %}{% endcapture %}
+{% capture sdk_support %}{% include kankoda/sdks/support sdk=site.data.sdk %}{% endcapture %}
+{% capture sdk_terms %}{% include kankoda/sdks/terms product="Sample" url="/" privacy-url="/" %}{% endcapture %}
+
+{%- comment -%} Some texts have the same headings, so remove their ids and make them smaller. {%- endcomment -%}
+<article class="wrapper wide slide-in">
+  <h2>App & SDK Texts</h2>
+  <p>These are long markdown texts, so expand one to view it.</p>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary class="faq-item-title">App Privacy Policy</summary>
+      <div class="faq-item-body">{{ app_privacy | markdownify | replace: "<h2 id=", "<h4 data-id=" | replace: "</h2>", "</h4>" | replace: "<h3 id=", "<h5 data-id=" | replace: "</h3>", "</h5>" }}</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-item-title">SDK Add-ons</summary>
+      <div class="faq-item-body">{{ sdk_addons | markdownify | replace: "<h2 id=", "<h4 data-id=" | replace: "</h2>", "</h4>" | replace: "<h3 id=", "<h5 data-id=" | replace: "</h3>", "</h5>" }}</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-item-title">SDK Privacy Policy</summary>
+      <div class="faq-item-body">{{ sdk_privacy | markdownify | replace: "<h2 id=", "<h4 data-id=" | replace: "</h2>", "</h4>" | replace: "<h3 id=", "<h5 data-id=" | replace: "</h3>", "</h5>" }}</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-item-title">SDK Support</summary>
+      <div class="faq-item-body">{{ sdk_support | markdownify | replace: "<h2 id=", "<h4 data-id=" | replace: "</h2>", "</h4>" | replace: "<h3 id=", "<h5 data-id=" | replace: "</h3>", "</h5>" }}</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-item-title">SDK Terms</summary>
+      <div class="faq-item-body">{{ sdk_terms | markdownify | replace: "<h2 id=", "<h4 data-id=" | replace: "</h2>", "</h4>" | replace: "<h3 id=", "<h5 data-id=" | replace: "</h3>", "</h5>" }}</div>
+    </details>
+  </div>
+</article>

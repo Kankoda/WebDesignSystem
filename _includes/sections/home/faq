@@ -1,0 +1,4 @@
+<article class="wrapper wide slide-in">
+  <h2>FAQ</h2>
+  {% include kankoda/components/faq-list items=site.data.faq %}
+</article>

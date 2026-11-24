@@ -1,0 +1,17 @@
+<article class="wrapper wide slide-in">
+  <h2>Code Box</h2>
+  <div style="width: 100%; min-width: 0; text-align: left;">
+{% highlight swift %}
+struct ContentView: View {
+
+    var body: some View {
+        Text("Hello, world!")
+    }
+}
+{% endhighlight %}
+
+{% highlight html %}
+<a class="cta glass" href="/blog">Read More</a>
+{% endhighlight %}
+  </div>
+</article>

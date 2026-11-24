@@ -1,0 +1,42 @@
+- title: Icon Card
+  text: A card with an icon and tags.
+  color: blue
+  url: "#cards"
+  icon:
+    name: lucide:layers
+  card:
+    tags:
+      - general
+      - pro
+
+- title: Emoji Card
+  text: A card with an emoji and bullets.
+  color: green
+  emoji: 🎨
+  url: "#cards"
+  card:
+    bullets:
+      - One
+      - Two
+      - Three
+
+- title: Image Card
+  text: A card with a background image.
+  color: purple
+  image: /assets/showcase/image.svg
+  url: "#cards"
+
+- title: Text Override
+  text: This text is replaced by the card text.
+  color: orange
+  icon:
+    name: lucide:pencil
+  url: "#cards"
+  card:
+    text: A card that overrides the item text.
+
+- title: Another Card
+  text: A card that makes the carousel scroll.
+  color: red
+  emoji: 🚀
+  url: "#cards"

@@ -1,0 +1,30 @@
+- eyebrow: Plain
+  title:   Full image
+  text:    A split item without any image options shows its full image, together with an optional eyebrow, a title, a text, and up to two buttons. The first button opens an url, and the second opens the App Store.
+  image:   /assets/showcase/device.svg
+  url:     "#split"
+  url_appstore: "#split"
+
+- eyebrow: Show Top
+  title:   Top of the image
+  text:    An <code>image-show</code> value of <code>top</code> only shows the top part of the image, as if it was placed in a slit. The item shows 60% of the image by default, which can be changed with <code>image-show-ratio</code>.
+  image:   /assets/showcase/device.svg
+  image-show: top
+  url:     "#split"
+
+- eyebrow: Show Bottom
+  title:   Bottom of the image
+  text:    An <code>image-show</code> value of <code>bottom</code> only shows the bottom part of the image, as if it came out of a slit. This item uses an <code>image-show-ratio</code> of 40, to only show 40% of the image.
+  image:   /assets/showcase/device.svg
+  image-show: bottom
+  image-show-ratio: 40
+  url:     "#split"
+
+- eyebrow: Bounce
+  title:   Bounce on appear
+  text:    An <code>image-bounce-on-appear</code> value of <code>true</code> makes the image bounce out of the slit when the item appears. All items that only show a part of the image also bounce when the image is hovered.
+  image:   /assets/showcase/device.svg
+  image-show: top
+  image-show-ratio: 50
+  image-bounce-on-appear: true
+  url:     "#split"
